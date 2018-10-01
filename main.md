@@ -125,7 +125,7 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
    
     `$ git rebase --onto repair~3 repair~1 repair`
     
-     where first commit to be removed is 3 and first commit to be kept is 1. This would result in removing commit 2&3.
+     where first commit to be removed is 3 and first commit to be kept is 1, would result in removing commit 2&3.
      
      
 =======
