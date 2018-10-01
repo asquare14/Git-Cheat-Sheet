@@ -22,6 +22,13 @@
 
 `$ git stash pop`	 
  - Get back stashed commits
+ 
+`$ git stash list` 
+ - Lists all stashed changesets
+ 
+ `$ git stash drop` 
+ - Discards the most recently stashed changeset
+ 
 
 `$ git commit --amend -m “updated commit msg”`	
  - Updates commit message
