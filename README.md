@@ -1,2 +1,2 @@
 # Git-Cheat-Sheet
-A cheatsheet for git commands.
+A cheatsheet for git commands. 
