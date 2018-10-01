@@ -124,8 +124,6 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
    -Above command could also be used to remove one or more consecutive commits.For example if you want to remove commit 2&3, command          would be as follows:
    
     `$ git rebase --onto repair~3 repair~1 repair`
-    
-     where first commit to be removed is 3 and first commit to be kept is 1, would result in removing commit 2&3.
      
      
 =======
