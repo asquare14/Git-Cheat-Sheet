@@ -23,7 +23,7 @@ Please refer to each project's style guidelines and guidelines for submitting pa
      ```
      - b : (The comman'ds category does not exist) add this way
      ```
-     ### Category
+     ## Category
      `$ git command`
      - Command description.
      ```
