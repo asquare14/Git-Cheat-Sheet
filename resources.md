@@ -7,5 +7,6 @@ They have been arranged alphabetically.
 - [git - the simple guide](http://rogerdudler.github.io/git-guide/) 
 - [Git Official Document](https://git-scm.com/docs/user-manual.html)
 - [Oh shit, git!](https://ohshitgit.com/)
+- [Explain git Like I’m Five](https://hackernoon.com/understanding-git-fcffd87c15a3)
 
 
