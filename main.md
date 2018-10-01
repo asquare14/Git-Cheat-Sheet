@@ -121,10 +121,10 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 
 ### Checking difference between any two particular commits 
 
-`$ git diff [--options] <commit> <commit> [--] [<path>...]`	
+`$ git diff <commit-id> <commit-id>`	
  - To check difference between any two commits by using their commit id. One can also use short git commit id which is provided by using `$ git log --oneline'` command
 
-`$ git diff <commit id>`
+`$ git diff <commit-id>`
 - To check difference between the latest commit relative to a particular old commit.
 
 `$ git diff --cached`
