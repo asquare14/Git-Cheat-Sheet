@@ -1,6 +1,6 @@
 ## GIT CHEATSHEET
 
-#### Common Commands
+### Common Commands
 `$ git clone <link to repo>`
 - Clones repository to local machine.
 
@@ -26,7 +26,7 @@
 `$ git clone <link> --depth=1`
 - Git supports the notion of a “shallow clone”, which is a more succinctly meaningful way of describing a local repository with history truncated to a particular depth during the clone operation. By providing an argument of --depth 1 to the clone command, the process will copy only the latest revision of everything in the repository. This can be a lifesaver for Git servers that might otherwise be overwhelmed by CI/CD automation		
 
-#### How to commit changes to a particular branch .
+### How to commit changes to a particular branch .
 
 `$ git add .`
  - Add all untracked files.
@@ -40,7 +40,7 @@
 `$ git push origin <branch name>`	
  - (eg: $ git push origin master). Push your changes.
 
-#### Commands related to branching
+### Commands related to branching
 
 It is a good practice to make a new branch for every new PR you make. Also,name the branches according to the work you are doing. It will be easier.
 
@@ -72,7 +72,7 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
 
 `$ git push origin <branch> --force`
 
-#### Making sure your repository is up-to-date with the original/upstream repository.
+### Making sure your repository is up-to-date with the original/upstream repository.
 
 Note: `< >` should not be included in commit message. Example, `git fetch upstream master`.
 
@@ -91,14 +91,14 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
  - To make sure rebase is done and your can see the commits.
 
 
-#### Rebasing
+### Rebasing
 
 `$ git rebase --abort`	
  - To quit the rebase process
 `$ git rebase --continue`	
  - To finish the rebase process
 
-#### How to undo a mistaken git rebase
+### How to undo a mistaken git rebase
 
 `$ git reflog <branch-name>` 
 `>> 73d836b testBranch@{0}: rebase finished: refs/heads/testBranch onto e806e41f1fe22624e6546abd65c332c934214891`
