@@ -90,6 +90,17 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 `$ git log`
  - To make sure rebase is done and you can see the commits.
 
+###  Stash
+`git stash save "stash name"`  
+`git stash`
+- Save a change to stash
+
+`git stash list`
+- List all stashes
+
+`git stash pop`
+`git stash apply`
+- Apply a Stash
 
 ### Rebasing
 
