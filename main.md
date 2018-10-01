@@ -1,6 +1,10 @@
 ## GIT CHEATSHEET
 
 ### Common Commands
+
+`$ git init`
+- Initializes a new Git repository on local machine.
+
 `$ git clone <link to repo>`
 - Clones repository to local machine.
 
@@ -31,7 +35,7 @@
 
 ### How to commit changes to a particular branch .
 
-`$ git add .`
+`$ git add .` or `git add -A`
  - Add all untracked files.
 
 `$ git commit -m “name of commit”`
@@ -61,6 +65,9 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
 
 `$ git branch -D branch-name`
 - Delete branch permanently
+
+`$ git merge branch-name`
+- Merge branch with the current branch.
 
 ### Squashing X commits together
 
@@ -92,6 +99,9 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 
 `$ git log`
  - To make sure rebase is done and you can see the commits.
+ 
+ `git diff origin/master`
+ - See differences between local changes and master
 
 
 ### Rebasing
