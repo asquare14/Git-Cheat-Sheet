@@ -22,6 +22,13 @@
 
 `$ git stash pop`	 
  - Get back stashed commits
+ 
+`$ git stash list` 
+ - Lists all stashed changesets
+ 
+ `$ git stash drop` 
+ - Discards the most recently stashed changeset
+ 
 
 `$ git commit --amend -m “updated commit msg”`	
  - Updates commit message
@@ -31,7 +38,7 @@
 
 ### Shallow cloning
 `$ git clone <link> --depth=1`
-- Git supports the notion of a “shallow clone”, which is a more succinctly meaningful way of describing a local repository with history truncated to a particular depth during the clone operation. By providing an argument of --depth 1 to the clone command, the process will copy only the latest revision of everything in the repository. This can be a lifesaver for Git servers that might otherwise be overwhelmed by CI/CD automation		
+- Git supports the notion of a “shallow clone”, which is a meaningful way of describing a local repository with the history truncated to a particular depth during the clone operation. By providing an argument of --depth 1 to the clone command, the process will copy only the latest revision of everything in the repository. This can be a lifesaver for Git servers that might otherwise be overwhelmed by CI/CD automation.		
 
 ### How to commit changes to a particular branch .
 
