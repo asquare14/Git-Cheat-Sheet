@@ -88,7 +88,7 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 `$ git push origin <ur branch-name u want to push to> --force` 	
 
 `$ git log`
- - To make sure rebase is done and your can see the commits.
+ - To make sure rebase is done and you can see the commits.
 
 
 ### Rebasing
