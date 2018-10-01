@@ -16,7 +16,11 @@ A bare repository is a bit different from a regular one, it doesn't .git folder,
 - Clones repository to local machine.
 
 ### Shallow cloning
+<<<<<<< HEAD
 `$ git clone <link> --depth=1`
+=======
+$ git clone <link> --depth=1
+>>>>>>> 065667126824da3a625b993a7506cec7fc47e2ed
 
     Git supports the notion of a “shallow clone”, which is a more succinctly meaningful way of describing a local repository with history truncated to a particular depth during the clone operation. By providing an argument of --depth 1 to the clone command, the process will copy only the latest revision of everything in the repository. This can be a lifesaver for Git servers that might otherwise be overwhelmed by CI/CD automation
 
