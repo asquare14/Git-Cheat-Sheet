@@ -130,21 +130,17 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
  - To finish the rebase process
 
 ## How to undo a mistaken git rebase
-- To undo a rebase, first find the head commit of the branch before the rebase began:
-
-`$ git reflog <branch-name>` 
+`$ git reflog <branch-name>`
 
 `>> 73d836b testBranch@{0}: rebase finished: refs/heads/testBranch onto e806e41f1fe22624e6546abd65c332c934214891`
 
 `>> 129e6d3 testBranch@{1}: commit: some sort of commit message`
+- Find the head commit of the branch before the rebase began, in this case `testBranch@{1}`
 
-- Then return to that commit using `git reset`
+`$ git reset --hard <commit-id>`
+- Return to that commit using `git reset`
+- For example, in this case the command would be `$ git reset --hard testBranch@{1}`
 
-`$ git reset --hard <commit>` 		
-
-- For example, in this case the command would be
-
-`$ git reset --hard testBranch@{1}`
 
 ### Checking the difference between any two particular commits 
 
