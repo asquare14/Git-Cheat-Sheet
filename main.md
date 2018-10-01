@@ -115,3 +115,13 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 - For example, in this case the command would be
 
 `$ git reset --hard testBranch@{1}`
+
+### How to turn a folder into a repository
+This is useful if you have a network drive, and wish to keep your own "local" git server.
+
+Go to the folder you wish to use as a repository
+`$ git init --bare`
+
+Now you can clone that repository from another folder as so
+
+`$ git clone U:\\Development\\MyProject`
