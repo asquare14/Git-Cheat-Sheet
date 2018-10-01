@@ -14,19 +14,12 @@
 `$ git log --oneline`
  - Shows history of past commits in summary which contains only commit id and commit message.
 
-`git log -S 'LoginViewController`
- - To show commits that make add or remove a certain string.
-
-`git log — all — grep=’day of week`
- - To search commits that contain a log message.
-
 `git tag`
  - To list all tags.
 
-`git tag -a 1.1 -m "my version 1.1"`
- - To Tag a commit.
-
 `git push --delete origin tagname`
+- To delete a git tag that has already been pushed
+
 `git push origin :tagname`
  - To Delete remote tags
 
@@ -34,8 +27,14 @@
  - To Push tag to remote.
 
 `git tag new old`
+- To rename old tag name.
+
 `git tag -d old`
+- To delete old tag name.
+
 `git push origin :refs/tags/old`
+- Refrence to push the tags.
+
 `git push --tags`
  - To Rename tag.
 
@@ -56,7 +55,7 @@
 
 ### Shallow cloning
 `$ git clone <link> --depth=1`
-- Git supports the notion of a “shallow clone”, which is a more succinctly meaningful way of describing a local repository with history truncated to a particular depth during the clone operation. By providing an argument of --depth 1 to the clone command, the process will copy only the latest revision of everything in the repository. This can be a lifesaver for Git servers that might otherwise be overwhelmed by CI/CD automation
+- Create a shallow clone with a history truncated to the specified number of commits.
 
 ### How to commit changes to a particular branch .
 
@@ -120,7 +119,8 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 `$ git rebase upstream/<branch-name>`
  - Puts your changes on top.
 
-`$ git push origin <ur branch-name u want to push to> --force`
+`$ git push origin <your_branch_name> --force`
+ - To properly force a git push.
 
 `$ git log`
  - To make sure rebase is done and you can see the commits.
