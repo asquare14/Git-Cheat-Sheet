@@ -1,7 +1,7 @@
 # GIT CHEATSHEET
 
 ## Initializing Git
-Those commands are related to the inizialitazion process for git repositories on your local machine.
+These commands are related to the inizialitazion process for git repositories on your local machine.
 
 `$ git init`
 - It will create a new git repository in the current directory.
@@ -19,7 +19,7 @@ A bare repository is a bit different from a regular one, it doesn't .git folder,
 ### Shallow cloning
 `$ git clone <link> --depth=1`
 
-Git supports the notion of a “shallow clone”, which is a more succinctly meaningful way of describing a local repository with history truncated to a particular depth during the clone operation. By providing an argument of --depth 1 to the clone command, the process will copy only the latest revision of everything in the repository. This can be a lifesaver for Git servers that might otherwise be overwhelmed by CI/CD automation
+Git supports the notion of a “shallow clone”, which is a more succinctly meaningful way of describing a local repository with history truncated to a particular depth during the clone operation. By providing an argument of --depth 1 to the clone command, the process will copy only the latest revision of everything in the repository. This can be a lifesaver for Git servers that might otherwise be overwhelmed by CI/CD automation.
 
 ## Common local commands
 `$ git log`
@@ -82,10 +82,10 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
 `$ git branch -D branch-name`
 - Delete branch permanently
 
-## Squashing X commits together
-
 `$ git merge branch-name`
 - Merge branch with the current branch.
+
+## Squashing X commits together
 
 `$ git rebase -i <after-this-commit>`	  
 - Eg: ( $ git rebase -i HEAD~2 ) => (rebasing 2 commits starting from HEAD)
@@ -142,7 +142,7 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 
 `$ git reset --hard testBranch@{1}`
 
-### Checking difference between any two particular commits 
+### Checking the difference between any two particular commits 
 
 `$ git diff <commit-id> <commit-id>`	
  - To check difference between any two commits by using their commit id. One can also use short git commit id which is provided by using `$ git log --oneline'` command
