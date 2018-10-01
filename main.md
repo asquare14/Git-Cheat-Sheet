@@ -125,3 +125,9 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 - For example, in this case the command would be
 
 `$ git reset --hard testBranch@{1}`
+
+### Comparing differences of two Commits
+
+- To see the diff for a particular Commit hash and his ancestor
+
+`$ git diff COMMITHASH~ COMMITHASH`
