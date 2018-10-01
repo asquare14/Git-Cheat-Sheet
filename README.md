@@ -13,7 +13,6 @@ A cheatsheet for git commands.
 
 
 ## Contributing to Git-Cheat-Sheet Project
-=========================================
 
 Git-Cheat-Sheet welcomes any contribution. Please refer to our style guide for submitting patches and additions.
 ### Installation
