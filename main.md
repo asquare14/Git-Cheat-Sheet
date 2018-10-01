@@ -83,10 +83,6 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
 - Delete branch permanently
 
 ## Squashing X commits together
-
-`$ git merge branch-name`
-- Merge branch with the current branch.
-
 `$ git rebase -i <after-this-commit>`	  
 - Eg: ( $ git rebase -i HEAD~2 ) => (rebasing 2 commits starting from HEAD)
 - Then edit the ‘pick’ to ‘squash’ in front of all those commits which you want to squash.
