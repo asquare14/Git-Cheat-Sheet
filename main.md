@@ -92,6 +92,9 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 
 `$ git log`
  - To make sure rebase is done and you can see the commits.
+ 
+ `git diff origin/master`
+ - See differences between local changes and master
 
 
 ### Rebasing
