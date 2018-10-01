@@ -92,10 +92,14 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
 - Then edit the ‘pick’ to ‘squash’ in front of all those commits which you want to squash.
 - Commit your new squashed commits.
 
-## Removing a commit from in between the commit history
-`$ git reset --hard <sha1-commit u want to remove-key>`
+## Going back to a previous commit in commit history
+`$ git reset --hard <HEAD^ sha1-commit you want to go-key>`
+- The ^ symbol after HEAD defines the selected commit. HEAD is the current one, so for each '^' it goes back 1 commit in history before the current.
+- Note that this command will move the HEAD pointer to the specified commit and all uncommitted changes to files will be discarded.
 
-`$ git push origin <branch> --force`
+`$ git reset --soft <HEAD^ sha1-commit you want to go-key>`
+- The ^ symbol after HEAD defines the selected commit. HEAD is the current one, so for each '^' it goes back 1 commit in history before the current.
+- Note that this command will move the HEAD pointer to the specified commit and all files that differ from the version in the selected commit will be moved to the staged area.
 
 ## Making sure your repository is up-to-date with the original/upstream repository
 Note: `< >` should not be included in commit message. Example, `git fetch upstream master`.
