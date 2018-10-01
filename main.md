@@ -59,6 +59,9 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
 `$ git branch -D branch-name`
 - Delete branch permanently
 
+`$ git merge branch-name`
+- Merge branch with the current branch.
+
 ### Squashing X commits together
 
 `$ git rebase -i <after-this-commit>`	  
