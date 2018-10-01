@@ -1,13 +1,27 @@
-## GIT CHEATSHEET
+# GIT CHEATSHEET
 
-### Common Commands
+## Initializing Git
+These commands are related to the inizialitazion process for git repositories on your local machine.
 
 `$ git init`
-- Initializes a new Git repository on local machine.
+- It will create a new git repository in the current directory.
+
+`$ git init --bare`
+- It will create a new bare repository.
+
+A bare repository is a bit different from a regular one, it doesn't .git folder, history is stored in the project root, also if you try to `git clone --bare` from a remote repository (e.g. github) you will lost track of it's origin since usually bare repositories are supposed to be served at the users as remote endpoints.
+
+## Cloning Repositories
 
 `$ git clone <link to repo>`
 - Clones repository to local machine.
 
+### Shallow cloning
+`$ git clone <link> --depth=1`
+
+Git supports the notion of a “shallow clone”, which is a more succinctly meaningful way of describing a local repository with history truncated to a particular depth during the clone operation. By providing an argument of --depth 1 to the clone command, the process will copy only the latest revision of everything in the repository. This can be a lifesaver for Git servers that might otherwise be overwhelmed by CI/CD automation.
+
+## Common local commands
 `$ git log`
  - Shows history of past commits
 
@@ -36,11 +50,7 @@
 `$ git commit --amend --author “new author name <new author’s email id>”`
 - Update the author of that commit        
 
-### Shallow cloning
-`$ git clone <link> --depth=1`
-- Git supports the notion of a “shallow clone”, which is a meaningful way of describing a local repository with the history truncated to a particular depth during the clone operation. By providing an argument of --depth 1 to the clone command, the process will copy only the latest revision of everything in the repository. This can be a lifesaver for Git servers that might otherwise be overwhelmed by CI/CD automation.		
-
-### How to commit changes to a particular branch .
+## How to commit changes to a particular branch .
 
 `$ git add .` or `git add -A`
  - Add all untracked files.
@@ -54,8 +64,7 @@
 `$ git push origin <branch name>`	
  - (eg: $ git push origin master). Push your changes.
 
-### Commands related to branching
-
+## Commands related to branching
 It is a good practice to make a new branch for every new PR you make. Also,name the branches according to the work you are doing. It will be easier.
 
 `$ git checkout -b mybranch`
@@ -76,21 +85,23 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
 `$ git merge branch-name`
 - Merge branch with the current branch.
 
-### Squashing X commits together
+## Squashing X commits together
 
 `$ git rebase -i <after-this-commit>`	  
 - Eg: ( $ git rebase -i HEAD~2 ) => (rebasing 2 commits starting from HEAD)
 - Then edit the ‘pick’ to ‘squash’ in front of all those commits which you want to squash.
 - Commit your new squashed commits.
 
-### Removing a commit from in between the commit history
+## Going back to a previous commit in commit history
+`$ git reset --hard <HEAD^ sha1-commit you want to go-key>`
+- The ^ symbol after HEAD defines the selected commit. HEAD is the current one, so for each '^' it goes back 1 commit in history before the current.
+- Note that this command will move the HEAD pointer to the specified commit and all uncommitted changes to files will be discarded.
 
-`$ git reset --hard <sha1-commit u want to remove-key>`
+`$ git reset --soft <HEAD^ sha1-commit you want to go-key>`
+- The ^ symbol after HEAD defines the selected commit. HEAD is the current one, so for each '^' it goes back 1 commit in history before the current.
+- Note that this command will move the HEAD pointer to the specified commit and all files that differ from the version in the selected commit will be moved to the staged area.
 
-`$ git push origin <branch> --force`
-
-### Making sure your repository is up-to-date with the original/upstream repository.
-
+## Making sure your repository is up-to-date with the original/upstream repository
 Note: `< >` should not be included in commit message. Example, `git fetch upstream master`.
 
 `$ git remote add upstream <link of original repo>`
@@ -111,32 +122,27 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
  - See differences between local changes and master
 
 
-### Rebasing
-
+## Rebasing
 `$ git rebase --abort`	
  - To quit the rebase process
+ 
 `$ git rebase --continue`	
  - To finish the rebase process
 
-### How to undo a mistaken git rebase
-
-- To undo a rebase, first find the head commit of the branch before the rebase began:
-
-`$ git reflog <branch-name>` 
+## How to undo a mistaken git rebase
+`$ git reflog <branch-name>`
 
 `>> 73d836b testBranch@{0}: rebase finished: refs/heads/testBranch onto e806e41f1fe22624e6546abd65c332c934214891`
 
 `>> 129e6d3 testBranch@{1}: commit: some sort of commit message`
+- Find the head commit of the branch before the rebase began, in this case `testBranch@{1}`
 
-- Then return to that commit using `git reset`
+`$ git reset --hard <commit-id>`
+- Return to that commit using `git reset`
+- For example, in this case the command would be `$ git reset --hard testBranch@{1}`
 
-`$ git reset --hard <commit>` 		
 
-- For example, in this case the command would be
-
-`$ git reset --hard testBranch@{1}`
-
-### Checking difference between any two particular commits 
+### Checking the difference between any two particular commits 
 
 `$ git diff <commit-id> <commit-id>`	
  - To check difference between any two commits by using their commit id. One can also use short git commit id which is provided by using `$ git log --oneline'` command

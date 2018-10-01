@@ -8,7 +8,10 @@ They have been arranged alphabetically.
 - [Git Handbook](https://guides.github.com/introduction/git-handbook/)
 - [Git Learn git, faster version control](https://www.tutorialspoint.com/git/)
 - [git - the simple guide](http://rogerdudler.github.io/git-guide/)
+- [Git Learn git, faster version control](https://www.tutorialspoint.com/git/)
+- [git - the simple guide](http://rogerdudler.github.io/git-guide/) 
 - [Git Tutorial Learn Git, Fast Version control](https://www.tutorialspoint.com/git/)
 - [Git Official Document](https://git-scm.com/docs/user-manual.html)
 - [Learn Git Branching](https://learngitbranching.js.org/)
 - [Oh shit, git!](https://ohshitgit.com/)
+
