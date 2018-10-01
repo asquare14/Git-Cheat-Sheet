@@ -93,9 +93,27 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
 - Commit your new squashed commits.
 
 ## Removing a commit from in between the commit history
-`$ git reset --hard <sha1-commit u want to remove-key>`
 
-`$ git push origin <branch> --force`
+  If you need to delete more than just the last commit use rebase.
+
+  Example-
+
+  Number	Hash	    Commit Message	
+  1	     2c6a45b	 (HEAD) Adding public method to access protected method	
+  2	     ae45fab	 Updates to database interface	
+  3	     77b9b82	 Improving database interface	
+  4	     3c9093c	 Merged develop branch into master	
+  5	     b3d92c5	 Adding new Event CMS Module	
+  6	     7feddbb	 Adding CMS class and files	
+  7	     a809379	 Adding project to Git	
+
+  Using the git log above we want to remove the following commit; 2 (ae45fab).
+
+  `$ git rebase --onto <branch name>~<first commit number to remove> <branch name>~<first commit to be kept> <branch name>`
+
+  e.g to remove commit 2 above
+
+  `$ git rebase --onto repair~2 repair~1 repair`
 
 ## Making sure your repository is up-to-date with the original/upstream repository
 Note: `< >` should not be included in commit message. Example, `git fetch upstream master`.
