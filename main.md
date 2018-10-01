@@ -121,6 +121,7 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 ## Rebasing
 `$ git rebase --abort`	
  - To quit the rebase process
+ 
 `$ git rebase --continue`	
  - To finish the rebase process
 
