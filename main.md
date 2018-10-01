@@ -94,34 +94,28 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
 
 ## Removing a commit from in between the commit history
 
-  If you need to delete more than just the last commit use rebase.
-
+   If you need to delete more than just the last commit use rebase.
+  
   Example-
 
-  Number	 Hash	    Commit Message	
+  commit 1	     2c6a45b	  (HEAD) Adding public method to access protected method	
   
-  1	     2c6a45b	  (HEAD) Adding public method to access protected method	
+  commit 2	     ae45fab	  Updates to database interface	
   
-  2	     ae45fab	  Updates to database interface	
-  
-  3	     77b9b82	  Improving database interface	
-  
-  4	     3c9093c	  Merged develop branch into master
-  
-  5	     b3d92c5	  Adding new Event CMS Module	
-  
-  6	     7feddbb	  Adding CMS class and files	
-  
-  7	     a809379	  Adding project to Git	
-  
+  commit 3	     77b9b82	  Improving database interface	
 
   Using the git log above we want to remove the following commit; 2 (ae45fab).
-
-  `$ git rebase --onto <branch name>~<first commit number to remove> <branch name>~<first commit to be kept> <branch name>`
-
-  e.g to remove commit 2 above
-
   `$ git rebase --onto repair~2 repair~1 repair`
+  - This command will delete commit 2
+  
+   Generalized Format for writing command is as follows:
+  `$ git rebase --onto <branch name>~<first commit number to remove> <branch name>~<first commit to be kept> <branch name>`
+   -Use rebase tool to rebase a series of commits onto the HEAD they were originally based on instead of moving them to another one.
+   -Then give branch name along with first commit to be removed.
+   -Then give branch name along with first commit to be kept.
+   -Above command could also be used to remove one or more consecutive commits.For example if you want to remove commit 2&3, command          would be as follows:
+    `$ git rebase --onto repair~3 repair~1 repair`
+     where first commit to be removed is 3 and first commit to be kept is 1. This would result in removing commit 2&3.
 
 ## Making sure your repository is up-to-date with the original/upstream repository
 Note: `< >` should not be included in commit message. Example, `git fetch upstream master`.
