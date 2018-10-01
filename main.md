@@ -98,20 +98,21 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
 
   Example-
 
-  Number	Hash	    Commit Message	
-  1	     2c6a45b	 (HEAD) Adding public method to access protected method	
+  Number	 Hash	    Commit Message	
   
-  2	     ae45fab	 Updates to database interface	
+  1	     2c6a45b	  (HEAD) Adding public method to access protected method	
   
-  3	     77b9b82	 Improving database interface	
+  2	     ae45fab	  Updates to database interface	
   
-  4	     3c9093c	 Merged develop branch into master
+  3	     77b9b82	  Improving database interface	
   
-  5	     b3d92c5	 Adding new Event CMS Module	
+  4	     3c9093c	  Merged develop branch into master
   
-  6	     7feddbb	 Adding CMS class and files	
+  5	     b3d92c5	  Adding new Event CMS Module	
   
-  7	     a809379	 Adding project to Git	
+  6	     7feddbb	  Adding CMS class and files	
+  
+  7	     a809379	  Adding project to Git	
   
 
   Using the git log above we want to remove the following commit; 2 (ae45fab).
