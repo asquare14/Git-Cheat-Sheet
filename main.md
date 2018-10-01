@@ -11,6 +11,9 @@
 `$ git log`
  - Shows history of past commits
 
+`$ git log --oneline`
+ - Shows history of past commits in summary which contains only commit id and commit message. 
+
 `$ git status`	
  - Shows the last modified files 
 
@@ -126,4 +129,17 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 
 `$ git reset --hard testBranch@{1}`
 
+### Checking difference between any two particular commits 
+
+`$ git diff <commit-id> <commit-id>`	
+ - To check difference between any two commits by using their commit id. One can also use short git commit id which is provided by using `$ git log --oneline'` command
+
+`$ git diff <commit-id>`
+- To check difference between the latest commit relative to a particular old commit.
+
+`$ git diff --cached`
+- To check difference between changed staged for the next commit relative to the latest commit.
+
+`$ git diff --cached <commit-id>`
+- To check difference between changed staged for the next commit relative to a particular commit.
 
