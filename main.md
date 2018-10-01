@@ -12,6 +12,7 @@ Those commands are related to the inizialitazion process for git repositories on
 A bare repository is a bit different from a regular one, it doesn't .git folder, history is stored in the project root, also if you try to `git clone --bare` from a remote repository (e.g. github) you will lost track of it's origin since usually bare repositories are supposed to be served at the users as remote endpoints.
 
 ## Cloning Repositories
+
 `$ git clone <link to repo>`
 - Clones repository to local machine.
 
@@ -24,6 +25,9 @@ Git supports the notion of a “shallow clone”, which is a more succinctly mea
 `$ git log`
  - Shows history of past commits
 
+`$ git log --oneline`
+ - Shows history of past commits in summary which contains only commit id and commit message. 
+
 `$ git status`	
  - Shows the last modified files 
 
@@ -32,6 +36,13 @@ Git supports the notion of a “shallow clone”, which is a more succinctly mea
 
 `$ git stash pop`	 
  - Get back stashed commits
+ 
+`$ git stash list` 
+ - Lists all stashed changesets
+ 
+ `$ git stash drop` 
+ - Discards the most recently stashed changeset
+ 
 
 `$ git commit --amend -m “updated commit msg”`	
  - Updates commit message
@@ -39,9 +50,9 @@ Git supports the notion of a “shallow clone”, which is a more succinctly mea
 `$ git commit --amend --author “new author name <new author’s email id>”`
 - Update the author of that commit        
 
+## How to commit changes to a particular branch .
 
-## How to commit changes to a particular branch
-`$ git add .`
+`$ git add .` or `git add -A`
  - Add all untracked files.
 
 `$ git commit -m “name of commit”`
@@ -72,6 +83,10 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
 - Delete branch permanently
 
 ## Squashing X commits together
+
+`$ git merge branch-name`
+- Merge branch with the current branch.
+
 `$ git rebase -i <after-this-commit>`	  
 - Eg: ( $ git rebase -i HEAD~2 ) => (rebasing 2 commits starting from HEAD)
 - Then edit the ‘pick’ to ‘squash’ in front of all those commits which you want to squash.
@@ -98,6 +113,9 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 
 `$ git log`
  - To make sure rebase is done and you can see the commits.
+ 
+ `git diff origin/master`
+ - See differences between local changes and master
 
 
 ## Rebasing
@@ -122,3 +140,18 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 - For example, in this case the command would be
 
 `$ git reset --hard testBranch@{1}`
+
+### Checking difference between any two particular commits 
+
+`$ git diff <commit-id> <commit-id>`	
+ - To check difference between any two commits by using their commit id. One can also use short git commit id which is provided by using `$ git log --oneline'` command
+
+`$ git diff <commit-id>`
+- To check difference between the latest commit relative to a particular old commit.
+
+`$ git diff --cached`
+- To check difference between changed staged for the next commit relative to the latest commit.
+
+`$ git diff --cached <commit-id>`
+- To check difference between changed staged for the next commit relative to a particular commit.
+
