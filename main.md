@@ -11,14 +11,16 @@ Those commands are related to the inizialitazion process for git repositories on
 
 A bare repository is a bit different from a regular one, it doesn't .git folder, history is stored in the project root, also if you try to `git clone --bare` from a remote repository (e.g. github) you will lost track of it's origin since usually bare repositories are supposed to be served at the users as remote endpoints.
 
-## Cloning Repositories
+### Cloning Repositories
 `$ git clone <link to repo>`
 - Clones repository to local machine.
 
-`$ git clone --bare <link to reo>`
-- Do a bare copy of the repository you want to clone.
+#### Shallow cloning
+$ git clone <link> --depth=1
 
-## Common local commands
+    Git supports the notion of a “shallow clone”, which is a more succinctly meaningful way of describing a local repository with history truncated to a particular depth during the clone operation. By providing an argument of --depth 1 to the clone command, the process will copy only the latest revision of everything in the repository. This can be a lifesaver for Git servers that might otherwise be overwhelmed by CI/CD automation
+
+### Common local commands
 `$ git log`
  - Shows history of past commits
 
@@ -37,9 +39,6 @@ A bare repository is a bit different from a regular one, it doesn't .git folder,
 `$ git commit --amend --author “new author name <new author’s email id>”`
 - Update the author of that commit        
 
-### Shallow cloning
-`$ git clone <link> --depth=1`
-- Git supports the notion of a “shallow clone”, which is a more succinctly meaningful way of describing a local repository with history truncated to a particular depth during the clone operation. By providing an argument of --depth 1 to the clone command, the process will copy only the latest revision of everything in the repository. This can be a lifesaver for Git servers that might otherwise be overwhelmed by CI/CD automation		
 
 ### How to commit changes to a particular branch .
 `$ git add .`
