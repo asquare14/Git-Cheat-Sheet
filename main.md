@@ -28,7 +28,7 @@
 
 ### How to commit changes to a particular branch .
 
-`$ git add .`
+`$ git add .` or `git add -A`
  - Add all untracked files.
 
 `$ git commit -m “name of commit”`
@@ -115,3 +115,5 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 - For example, in this case the command would be
 
 `$ git reset --hard testBranch@{1}`
+
+
