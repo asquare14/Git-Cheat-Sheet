@@ -1,8 +1,17 @@
 ## GIT CHEATSHEET
 
 ### Common Commands
+`$ git init`
+- It will create a new git repository in the current directory
+
+`$ git init --bare`
+- it will create a new bare repository (no .git folder, history is stored in the project root)
+
 `$ git clone <link to repo>`
 - Clones repository to local machine.
+
+`$ git clone --bare <link to reo>`
+- Do a bare copy of the repository you want to clone, useful if you are just cloning it and don't want to track updatese
 
 `$ git log`
  - Shows history of past commits
