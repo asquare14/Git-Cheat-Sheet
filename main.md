@@ -5,7 +5,7 @@
 `$ git init`
 - Initializes a new Git repository on local machine.
 
-`$ git clone <link to repo>`
+`$ git clone <link to repository>`
 - Clones repository to local machine.
 
 `$ git log`
@@ -37,7 +37,7 @@
 - Update the author of that commit        
 
 ### Shallow cloning
-`$ git clone <link> --depth=1`
+`$ git clone <link to repository> --depth=1`
 - Git supports the notion of a “shallow clone”, which is a meaningful way of describing a local repository with the history truncated to a particular depth during the clone operation. By providing an argument of --depth 1 to the clone command, the process will copy only the latest revision of everything in the repository. This can be a lifesaver for Git servers that might otherwise be overwhelmed by CI/CD automation.		
 
 ### How to commit changes to a particular branch .
