@@ -40,7 +40,7 @@ $ git clone <link> --depth=1
 - Update the author of that commit        
 
 
-## How to commit changes to a particular branch .
+## How to commit changes to a particular branch
 `$ git add .`
  - Add all untracked files.
 
@@ -54,7 +54,6 @@ $ git clone <link> --depth=1
  - (eg: $ git push origin master). Push your changes.
 
 ## Commands related to branching
-
 It is a good practice to make a new branch for every new PR you make. Also,name the branches according to the work you are doing. It will be easier.
 
 `$ git checkout -b mybranch`
@@ -73,20 +72,17 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
 - Delete branch permanently
 
 ## Squashing X commits together
-
 `$ git rebase -i <after-this-commit>`	  
 - Eg: ( $ git rebase -i HEAD~2 ) => (rebasing 2 commits starting from HEAD)
 - Then edit the ‘pick’ to ‘squash’ in front of all those commits which you want to squash.
 - Commit your new squashed commits.
 
 ## Removing a commit from in between the commit history
-
 `$ git reset --hard <sha1-commit u want to remove-key>`
 
 `$ git push origin <branch> --force`
 
-## Making sure your repository is up-to-date with the original/upstream repository.
-
+## Making sure your repository is up-to-date with the original/upstream repository
 Note: `< >` should not be included in commit message. Example, `git fetch upstream master`.
 
 `$ git remote add upstream <link of original repo>`
@@ -105,14 +101,12 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 
 
 ## Rebasing
-
 `$ git rebase --abort`	
  - To quit the rebase process
 `$ git rebase --continue`	
  - To finish the rebase process
 
 ## How to undo a mistaken git rebase
-
 - To undo a rebase, first find the head commit of the branch before the rebase began:
 
 `$ git reflog <branch-name>` 
