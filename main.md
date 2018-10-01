@@ -1,6 +1,10 @@
 ## GIT CHEATSHEET
 
 ### Common Commands
+
+`$ git init`
+- Initializes a new Git repository on local machine.
+
 `$ git clone <link to repo>`
 - Clones repository to local machine.
 
