@@ -174,3 +174,15 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 - git commend quietly tacks any staged files onto the last commit you created, re-using your existing commit message
 
 
+## Tracking the changes in file and stashing them away for later use
+`$  git config --global alias.stsh 'stash --keep-index`
+
+- git stash is one of the most delightful and useful Git commands. It takes any changes to tracked files in your work tree and stashes them away for later use, leaving you with a clean work tree to start hacking on something else. 
+
+## git shorty
+`$  git config --global alias.shorty 'status --short --branch`
+
+- Git shorty tells you about staged, unstaged, and untracked changes in an unverbose manner unlike git status. 
+
+
+
