@@ -21,6 +21,9 @@ Tons of learning materials on the Web.
 - [Learn-git on CodeAcademy](https://www.codecademy.com/learn/learn-git)
 - [Oh shit, git!](https://ohshitgit.com/)
 - [Visualizing Git](http://git-school.github.io/visualizing-git/)
+- [Git and GitHub ](https://classroom.udacity.com/courses/ud775-india)
+- [Git Branching ](https://learngitbranching.js.org)
+-[Git Essential Training](https://www.lynda.com/Git-tutorials/Git-Essential-Training/100222-2.html)
 
 ## Workflow
 
