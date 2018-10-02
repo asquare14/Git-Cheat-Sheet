@@ -6,7 +6,7 @@ They have been arranged alphabetically.
 - [Tutorials](#tutorial)
 - [Workflow](#workflow)
 
-## Tutorial
+## Tutorials
 
 Tons of learning materials on the Web.
 
@@ -18,6 +18,7 @@ Tons of learning materials on the Web.
 - [Git Official Document](https://git-scm.com/docs/user-manual.html)
 - [Git Tips](https://github.com/git-tips/tips)
 - [Git Tower's Cheatsheet](https://www.git-tower.com/blog/git-cheat-sheet)
+- [Learn-git on CodeAcademy](https://www.codecademy.com/learn/learn-git)
 - [Oh shit, git!](https://ohshitgit.com/)
 - [Visualizing Git](http://git-school.github.io/visualizing-git/)
 
