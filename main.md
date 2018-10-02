@@ -1,5 +1,8 @@
 # GIT CHEATSHEET
 
+## Help and Documentation
+`$ git help <command>`
+
 ## Initializing Git
 These commands are related to the inizialitazion process for git repositories on your local machine.
 
@@ -29,7 +32,7 @@ Git supports the notion of a “shallow clone”, which is a more succinctly mea
  - Shows history of past commits in summary which contains only commit id and commit message. 
  
  `$ git blame <file>`
- - Shows the last person who have changed the line in a document upto the last commit.
+ - Shows what revision and author last modified each line of a file upto the last commit.
 
 `$ git status`	
  - Shows the last modified files 
@@ -90,6 +93,7 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
 
 `$ git mergetool`
 - Run merge conflict resolution tools to resolve merge conflicts.
+
 ## Squashing X commits together
 
 `$ git rebase -i <after-this-commit>`	  
@@ -160,6 +164,3 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 
 `$ git diff --cached <commit-id>`
 - To check difference between changed staged for the next commit relative to a particular commit.
-
-### Help and Documentation
-`$ git help <command>`
