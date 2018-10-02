@@ -32,28 +32,28 @@ Git supports the notion of a “shallow clone”, which is a more succinctly mea
  - Shows history of past commits
 
 `$ git log --oneline`
- - Shows history of past commits in summary which contains only commit id and commit message. 
- 
+ - Shows history of past commits in summary which contains only commit id and commit message.
+
  `$ git blame <file>`
  - Shows what revision and author last modified each line of a file upto the last commit.
 
-`$ git status`	
- - Shows the last modified files 
+`$ git status`
+ - Shows the last modified files
 
 `$ git stash`	 
  - Git stash temporarily shelves or stashes changes made to your working copy so you can work on something else, and come back and re-apply them later on.
 
 `$ git stash pop`	 
  - Get back stashed commits
- 
-`$ git stash list` 
- - Lists all stashed changesets
- 
- `$ git stash drop` 
- - Discards the most recently stashed changeset
- 
 
-`$ git commit --amend -m “updated commit msg”`	
+`$ git stash list`
+ - Lists all stashed changesets
+
+ `$ git stash drop`
+ - Discards the most recently stashed changeset
+
+
+`$ git commit --amend -m “updated commit msg”`
  - Updates commit message
 
 `$ git commit --amend --author “new author name <new author’s email id>”`
@@ -70,7 +70,7 @@ Git supports the notion of a “shallow clone”, which is a more succinctly mea
 `$ git commit --amend (if you want to amend your commit message)`
  - If you want to edit your commit message.
 
-`$ git push origin <branch name>`	
+`$ git push origin <branch name>`
  - (eg: $ git push origin master). Push your changes.
 
 ## Commands related to branching
@@ -80,7 +80,7 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
  - Creates a new branch named mybranch.
 
 `$ git checkout mybranch`
- - Move to a different branch. 
+ - Move to a different branch.
 
 `$ git branch`
 - Check if you're on the right branch. Now,you’re on the new branch ! Commit your changes here.
@@ -117,28 +117,28 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
 Note: `< >` should not be included in commit message. Example, `git fetch upstream master`.
 
 `$ git remote add upstream <link of original repo>`
- - Note that "upstream" is the name I chose to give the repo, you can name it anything. 
+ - Note that "upstream" is the name I chose to give the repo, you can name it anything.
 
 `$ git fetch upstream <branch name>`
  - Fetch the latest changes. Alternatively, you can do `git pull upstream <branch name>` but it adds an extra merge commit.
 
-`$ git rebase upstream/<branch-name>`	
+`$ git rebase upstream/<branch-name>`
  - Puts your changes on top.
 
 `$ git push origin <ur branch-name u want to push to> --force` 	
 
 `$ git log`
  - To make sure rebase is done and you can see the commits.
- 
+
  `git diff origin/master`
  - See differences between local changes and master
 
 
 ## Rebasing
-`$ git rebase --abort`	
+`$ git rebase --abort`
  - To quit the rebase process
- 
-`$ git rebase --continue`	
+
+`$ git rebase --continue`
  - To finish the rebase process
 
 ## How to undo a mistaken git rebase
@@ -154,9 +154,9 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 - For example, in this case the command would be `$ git reset --hard testBranch@{1}`
 
 
-### Checking the difference between any two particular commits 
+### Checking the difference between any two particular commits
 
-`$ git diff <commit-id> <commit-id>`	
+`$ git diff <commit-id> <commit-id>`
  - To check difference between any two commits by using their commit id. One can also use short git commit id which is provided by using `$ git log --oneline'` command
 
 `$ git diff <commit-id>`
@@ -167,3 +167,16 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 
 `$ git diff --cached <commit-id>`
 - To check difference between changed staged for the next commit relative to a particular commit.
+
+
+
+## Converting a folder into a working Git repository
+
+- For projects using repositories on GitHub
+ - `cd <localdir>` to change to the directory you want to use as a repository
+ - `git init` to initialize the repository
+ - `git add .` to prepare all of the local files to be sent to the remote repository
+ - `git commit -m "message"` to name your commit
+ - `git remote add origin <url>` to set the remote location of your repository
+   - *This can be found on the primary Code tab of a GitHub project on the web. Repositories not hosted through services like GitHub or BitBucket require setting up a git daemon*
+ - `git push -u origin master` to submit your commit to the remote repository
