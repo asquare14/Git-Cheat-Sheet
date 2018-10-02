@@ -2,6 +2,9 @@
 
 ## Help and Documentation
 `$ git help <command>`
+- Display help information about Git.
+- With no options and no COMMAND or GUIDE given, the synopsis of the git command and a list of the most commonly used Git commands are printed on the standard output.
+- Note that `git --help ...` is identical to `git help ...`
 
 ## Initializing Git
 These commands are related to the inizialitazion process for git repositories on your local machine.
