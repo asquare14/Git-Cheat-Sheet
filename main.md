@@ -167,3 +167,10 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 
 `$ git diff --cached <commit-id>`
 - To check difference between changed staged for the next commit relative to a particular commit.
+
+
+## Staging files without worry 
+`$ git config --global alias.commend 'commit --amend --no-edit`    
+- git commend quietly tacks any staged files onto the last commit you created, re-using your existing commit message
+
+
