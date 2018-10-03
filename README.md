@@ -22,7 +22,8 @@ Git-Cheat-Sheet welcomes any contribution. Please refer to our style guide for s
 3. Enter the new **Git-Cheat-Sheet** directory with `cd Git-Cheat-Sheet`.
 4. Make changes to the file you want, commit your changes and submit your Pull Request.
 
-Note: Please rebase from master before sending a pull request. Since the repo is quite active it might happen that your changes may go under some merge conflicts.  
+Note: Since this is an active project please rebase from master before submitting a Pull Request to avoid merge conflicts.  
+
 ### Style guide
 
 Adding the git commands in `main.md` :
