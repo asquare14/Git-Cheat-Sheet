@@ -210,8 +210,5 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 `$ git diff <commit-id>`
 - To check difference between the latest commit relative to a particular old commit.
 
-`$ git diff --cached`
-- To check difference between changed staged for the next commit relative to the latest commit.
-
 `$ git diff --cached <commit-id>`
-- To check difference between changed staged for the next commit relative to a particular commit.
+- To check difference between changed staged for the next commit relative to a particular commit ie its `<commit-id>` or `HEAD` if relative to the latest commit.
