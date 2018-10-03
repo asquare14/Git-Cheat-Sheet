@@ -44,5 +44,4 @@ Please post any bugs, questions, or ideas on our
 
 If you create an issue, please tag it with the appropriate label. 
 
-<style>.heart{color:#e25555;}</style>
 ## Made with <span class="heart">❤</span> by [Atibhi Agrawal](https://github.com/asquare14/)
