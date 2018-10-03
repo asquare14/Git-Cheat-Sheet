@@ -122,11 +122,11 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
   
   Example-
 
+  ```
   commit 1	     2c6a45b	  Adding public method to access protected method(HEAD)	
-  
   commit 2	     ae45fab	  Updates to database interface	
-  
   commit 3	     77b9b82	  Improving database interface	
+  ```
 
   Using the git log above we want to remove the following commit; 2 (ae45fab).
   
