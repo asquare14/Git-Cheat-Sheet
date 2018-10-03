@@ -6,6 +6,17 @@
 - With no options and no COMMAND or GUIDE given, the synopsis of the git command and a list of the most commonly used Git commands are printed on the standard output.
 - Note that `git --help ...` is identical to `git help ...`
 
+## Converting a folder into a working Git repository
+
+- For projects using repositories on GitHub
+ - `cd <localdir>` to change to the directory you want to use as a repository
+ - `git init` to initialize the repository
+ - `git add .` to prepare all of the local files to be sent to the remote repository
+ - `git commit -m "message"` to name your commit
+ - `git remote add origin <url>` to set the remote location of your repository
+   - *This can be found on the primary Code tab of a GitHub project on the web. Repositories not hosted through services like GitHub or BitBucket require setting up a git daemon*
+ - `git push -u origin master` to submit your commit to the remote repository
+
 ## Initializing Git
 These commands are related to the inizialitazion process for git repositories on your local machine.
 
@@ -167,16 +178,3 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 
 `$ git diff --cached <commit-id>`
 - To check difference between changed staged for the next commit relative to a particular commit.
-
-
-
-## Converting a folder into a working Git repository
-
-- For projects using repositories on GitHub
- - `cd <localdir>` to change to the directory you want to use as a repository
- - `git init` to initialize the repository
- - `git add .` to prepare all of the local files to be sent to the remote repository
- - `git commit -m "message"` to name your commit
- - `git remote add origin <url>` to set the remote location of your repository
-   - *This can be found on the primary Code tab of a GitHub project on the web. Repositories not hosted through services like GitHub or BitBucket require setting up a git daemon*
- - `git push -u origin master` to submit your commit to the remote repository
