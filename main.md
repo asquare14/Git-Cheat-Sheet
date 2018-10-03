@@ -202,7 +202,7 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 - For example, in this case the command would be `$ git reset --hard testBranch@{1}`
 
 
-### Checking the difference between any two particular commits
+## Checking the difference between any two particular commits
 
 `$ git diff <commit-id> <commit-id>`
  - To check difference between any two commits by using their commit id. One can also use short git commit id which is provided by using `$ git log --oneline'` command
