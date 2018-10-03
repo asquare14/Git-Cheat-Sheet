@@ -126,7 +126,6 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
     `$ git rebase --onto repair~3 repair~1 repair`
      
      
-=======
 ## Going back to a previous commit in commit history
 `$ git reset --hard <HEAD^ sha1-commit you want to go-key>`
 - The ^ symbol after HEAD defines the selected commit. HEAD is the current one, so for each '^' it goes back 1 commit in history before the current.
