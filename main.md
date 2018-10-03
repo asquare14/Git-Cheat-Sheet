@@ -111,19 +111,19 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
   
   - This command will delete commit 2
   
-   Generalized Format for writing command is as follows:
+    Generalized Format for writing command is as follows:
    
   `$ git rebase --onto <branch name>~<first commit number to remove> <branch name>~<first commit to be kept> <branch name>`
   
-   -Use rebase tool to rebase a series of commits onto the HEAD they were originally based on instead of moving them to another one.
+   - Use rebase tool to rebase a series of commits onto the HEAD they were originally based on instead of moving them to another one.
    
-   -Then give branch name along with first commit to be removed.
+   - Then give branch name along with first commit to be removed.
    
-   -Then give branch name along with first commit to be kept.
+   - Then give branch name along with first commit to be kept.
    
-   -Above command could also be used to remove one or more consecutive commits.For example if you want to remove commit 2&3, command          would be as follows:
+   - Above command could also be used to remove one or more consecutive commits.For example if you want to remove commit 2&3, command        would be as follows:
    
-    `$ git rebase --onto repair~3 repair~1 repair`
+    ` $ git rebase --onto repair~3 repair~1 repair `
      
      
 ## Going back to a previous commit in commit history
