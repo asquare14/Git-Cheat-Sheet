@@ -44,4 +44,3 @@ Please post any bugs, questions, or ideas on our
 
 If you create an issue, please tag it with the appropriate label. 
 
-#### Made with <span class="heart">❤</span> by [Atibhi Agrawal](https://github.com/asquare14/) and [Vibhav Agarwal](https://github.com/vibhavagarwal5?)
