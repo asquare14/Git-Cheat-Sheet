@@ -133,6 +133,17 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
  `git diff origin/master`
  - See differences between local changes and master
 
+###  Stash
+`git stash save "stash name"`  
+`git stash`
+- Save a change to stash
+
+`git stash list`
+- List all stashes
+
+`git stash pop`
+`git stash apply`
+- Apply a Stash
 
 ## Rebasing
 `$ git rebase --abort`	
