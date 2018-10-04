@@ -3,8 +3,17 @@
 They have been arranged alphabetically.
 
 ## Table of Contents
+- [Git Cheat Sheets](#git-cheat-sheets)
 - [Tutorials](#tutorial)
 - [Workflow](#workflow)
+
+## Git Cheat Sheets
+
+Links to Git cheatsheets
+
+- [Atlassian Git Cheatsheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
+- [GitHub Git Cheatsheet (PDF)](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
+- [GitLab Git Cheatsheet (PDF) ](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
 
 ## Tutorials
 
