@@ -3,9 +3,17 @@
 They have been arranged alphabetically.
 
 ## Table of Contents
+- [Git Cheat Sheets](#git-cheat-sheets)
 - [Tutorials](#tutorial)
 - [Workflow](#workflow)
-- [Git Cheat Sheets](#git-cheat-sheets)
+
+## Git Cheat Sheets
+
+Links to Git cheatsheets
+
+- [Atlassian Git Cheatsheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
+- [GitHub Git Cheatsheet (PDF)](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
+- [GitLab Git Cheatsheet (PDF) ](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
 
 ## Tutorials
 
@@ -37,11 +45,3 @@ Helps you to improve your Git workflow.
 - [Git Distributed Workflow](https://git-scm.com/book/it/v2/Distributed-Git-Distributed-Workflows)
 - [Github Flow](http://scottchacon.com/2011/08/31/github-flow.html)
 - [GitLab Flow](https://about.gitlab.com/2014/09/29/gitlab-flow/)
-
-## Git Cheat Sheets
-
-Links to Git cheatsheets
-
-- [Atlassian Git Cheatsheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
-- [GitHub Git Cheatsheet (PDF)](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
-- [GitLab Git Cheatsheet (PDF) ](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
