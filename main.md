@@ -150,9 +150,12 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 - Find the head commit of the branch before the rebase began, in this case `testBranch@{1}`
 
 `$ git reset --hard <commit-id>`
-- Return to that commit using `git reset`
-- For example, in this case the command would be `$ git reset --hard testBranch@{1}`
 
+`git reset`
+- To return to that commit 
+
+`$ git reset --hard testBranch@{1}`
+- For example, in this case the command would be as mentioned above
 
 ### Checking the difference between any two particular commits 
 
