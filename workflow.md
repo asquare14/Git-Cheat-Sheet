@@ -14,22 +14,29 @@
 
 This file explains the basic GitHub workflow for collaboration.
 
-## Fork a repository from Github.com
+**TLDR;**
+* Fork from `upstream`
+* Clone your `origin`
+* Make a branch and play in it
+* Push your branch to your `origin`
+* Make a pull request from your branch in `origin` to master in `upstream`
+
+## Fork a repository
 
 For example, fork this repository - `aSquare14/Git-Cheat-Sheet` and it becomes `your-username/Git-Cheat-Sheet`.
 Each developer creates their own forks this way.
 
 
-`aSquare14/Git-Cheat-Sheet` will be called 'upstream', btw. And _your_ fork is called 'origin'.
+`aSquare14/Git-Cheat-Sheet` will be called 'upstream' and your fork is called 'origin', btw.
 
 
 ## Clone your fork
 
-Clone _your_ fork to get a local copy on your computer.
+Clone `origin` - _your_ fork to get a local copy on your computer.
 
 `git clone https://github.com/your-username/Git-Cheat-Sheet.git`
 
-## Add the original repository as remote
+## Add the upstream repository as remote
 
 ```
 cd Git-Cheat-Sheet
@@ -49,22 +56,9 @@ To create a new branch, use this command
 `git checkout` is a command used to move between branches.
 `-b` is a shortcut to create a new branch and move to it.
 
-After you're done, stage and commit your changes.
-
-```
-git add --all
-git commit -am "Commit message."
-```
-
-## Push branches to origin
-
-After you're done working on that feature, push your branch to origin - which is your fork.
-
-`git push origin branchName`
+You can commit in this branch and you can push the branch to `origin`.
 
 ## Create a pull request
 
-When you are done with your branch, create a pull request from your branch to master.
-
-
+When you are done with your branch, create a pull request from your branch in origin to master of upstream.
 
