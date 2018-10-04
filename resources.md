@@ -27,9 +27,6 @@ Tons of learning materials on the Web.
 - [git - the simple guide](http://rogerdudler.github.io/git-guide/)
 - [Git Learn git, faster version control](https://www.tutorialspoint.com/git/)
 - [git - the simple guide](http://rogerdudler.github.io/git-guide/) 
-- [Git Tutorial Learn Git, Fast Version control](https://www.tutorialspoint.com/git/)
-- [Git Official Document](https://git-scm.com/docs/user-manual.html)
-- [Learn Git Branching](https://learngitbranching.js.org/)
 =======
 =======
 - [Egghead Git tutorial](https://egghead.io/browse/tools/git)
