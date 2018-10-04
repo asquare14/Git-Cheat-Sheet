@@ -25,6 +25,7 @@ Tons of learning materials on the Web.
 - [Pluralsight Git Course](https://www.pluralsight.com/courses/code-school-git-real?gclid=EAIaIQobChMIlIu99OTn3QIVWgwrCh3SuAJKEAAYASAAEgI6JvD_BwE&aid=7010a000002BWq6AAG&promo=&oid=&utm_source=non_branded&utm_medium=digital_paid_search_google&utm_campaign=IN_Dynamic&utm_content=&s_kwcid=AL!5668!3!277681681323!b!!g!!&ef_id=WyW-tQAABZggfylD:20181002124627:s)
 - [ProGit Book](https://git-scm.com/book/en/v2)
 - [Visualizing Git](http://git-school.github.io/visualizing-git/)
+- [Learn Git in 30 minutes](https://tutorialzine.com/2016/06/learn-git-in-30-minutes)
 
 ## Workflow
 
