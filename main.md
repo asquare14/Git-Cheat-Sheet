@@ -151,7 +151,7 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 
 `$ git reset --hard <commit-id>`
 
-`git reset`
+`$ git reset`
 - To return to that commit 
 
 `$ git reset --hard testBranch@{1}`
