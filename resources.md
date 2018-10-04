@@ -5,7 +5,7 @@ They have been arranged alphabetically.
 ## Table of Contents
 - [Tutorials](#tutorial)
 - [Workflow](#workflow)
-- [Git Cheat Sheets](#cheatsheets)
+- [Git Cheat Sheets](#gitcheatsheets)
 
 ## Tutorials
 
