@@ -57,18 +57,20 @@ Git supports the notion of a “shallow clone”, which is a more succinctly mea
 `$ git stash pop`	 
  - Get back stashed commits
 
+`$ git stash pop stash@{<index>}`
+ - Pop only a specific index from the stash. You can find the index by running `git stash list`.
+
 `$ git stash list`
  - Lists all stashed changesets
 
  `$ git stash drop`
  - Discards the most recently stashed changeset
 
-
 `$ git commit --amend -m “updated commit msg”`
  - Updates commit message
 
 `$ git commit --amend --author “new author name <new author’s email id>”`
-- Update the author of that commit        
+- Update the author of that commit
 
 ## How to commit changes to a particular branch .
 
@@ -95,6 +97,9 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
 
 `$ git branch`
 - Check if you're on the right branch. Now,you’re on the new branch ! Commit your changes here.
+
+`$ git branch -a`
+- To list all the local and as well as the remote branches.
 
 `$ git branch -d branch-name`
 - Delete branch temporarily
