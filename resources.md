@@ -1,6 +1,4 @@
-#### This document contains resources to learn git.
-
-They have been arranged alphabetically.
+#### This document contains resources to learn git. (Alphabetically arranged)
 
 ## Table of Contents
 - [Git Cheat Sheets](#git-cheat-sheets)
