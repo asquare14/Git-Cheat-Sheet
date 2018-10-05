@@ -81,6 +81,9 @@ Git supports the notion of a “shallow clone”, which is a more succinctly mea
 `$ git commit --amend (if you want to amend your commit message)`
  - If you want to edit your commit message.
 
+`$ git commit -a --amend -C HEAD`
+ - Add all the untracked files to the last commit without changing the commit message.
+
 `$ git push origin <branch name>`
  - (eg: $ git push origin master). Push your changes.
 
@@ -92,6 +95,9 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
 
 `$ git checkout mybranch`
  - Move to a different branch.
+
+`$ git checkout -`
+- Return to the previously checked out branch.
 
 `$ git branch`
 - Check if you're on the right branch. Now,you’re on the new branch ! Commit your changes here.
