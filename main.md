@@ -107,6 +107,9 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
 `$ git branch -a`
 - To list all the local and as well as the remote branches.
 
+`$ git fetch -p`
+- Delete local branches which doesn’t exist on remote anymore.
+
 `$ git branch -d branch-name`
 - Delete branch temporarily
 
@@ -119,12 +122,33 @@ It is a good practice to make a new branch for every new PR you make. Also,name 
 `$ git mergetool`
 - Run merge conflict resolution tools to resolve merge conflicts.
 
+
+## Renaming branch
+
+If you want to rename branch you have to run this set of commands.
+
+`$ git branch -m old_branch new_branch`
+- Rename branch locally.
+
+`$ git push origin :old_branch`
+- Then delete the old branch from origin.
+
+`$ git push --set-upstream origin new_branch`
+- Push the new branch and set local branch to track the new remote.
+
+
 ## Squashing X commits together
 
 `$ git rebase -i <after-this-commit>`	  
 - Eg: ( $ git rebase -i HEAD~2 ) => (rebasing 2 commits starting from HEAD)
 - Then edit the ‘pick’ to ‘squash’ in front of all those commits which you want to squash.
 - Commit your new squashed commits.
+
+
+## Squashing all commits up to root
+
+`$ git rebase -i --root master`
+- This will ‘squash’ all commits up to Initial (first) commit.
 
 
 ## Removing a commit from in between the commit history
