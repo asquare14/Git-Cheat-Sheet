@@ -53,6 +53,9 @@ Git supports the notion of a “shallow clone”, which is a more succinctly mea
 
 `$ git stash`	 
  - Git stash temporarily shelves or stashes changes made to your working copy so you can work on something else, and come back and re-apply them later on.
+ 
+ `$ git stash save "message"`
+ - Same as above but also annotates the stash with a description. This will be shown when running `$ git stash list` and helps provide context if you have multiple stashes at a time.
 
 `$ git stash pop`	 
  - Get back stashed commits
