@@ -43,3 +43,4 @@ Helps you to improve your Git workflow.
 - [Git Distributed Workflow](https://git-scm.com/book/it/v2/Distributed-Git-Distributed-Workflows)
 - [Github Flow](http://scottchacon.com/2011/08/31/github-flow.html)
 - [GitLab Flow](https://about.gitlab.com/2014/09/29/gitlab-flow/)
+* [Resources to learn Git](https://try.github.io/)
