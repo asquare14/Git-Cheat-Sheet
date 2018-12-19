@@ -250,3 +250,11 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 
 `$ git diff --cached <commit-id>`
 - To check difference between changed staged for the next commit relative to a particular commit ie its `<commit-id>` or `HEAD` if relative to the latest commit.
+
+## Add gitignore to existing repo 
+
+- [Adding gitignore to existing repo](https://stackoverflow.com/questions/19663093/apply-gitignore-on-an-existing-repository-already-tracking-large-number-of-files)
+
+## Removing all files from git
+
+- [Removing files from git](https://stackoverflow.com/questions/2047465/how-can-i-delete-a-file-from-git-repo)
