@@ -26,7 +26,7 @@ These commands are related to the inizialitazion process for git repositories on
 `$ git init --bare`
 - It will create a new bare repository.
 
-A bare repository is a bit different from a regular one, it doesn't .git folder, history is stored in the project root, also if you try to `git clone --bare` from a remote repository (e.g. github) you will lost track of it's origin since usually bare repositories are supposed to be served at the users as remote endpoints.
+A bare repository is a bit different from a regular one, it doesn't include a .git folder, history is stored in the project root, also if you try to `git clone --bare` from a remote repository (e.g. github) you will lose track of it's origin since usually bare repositories are supposed to be served at the users as remote endpoints.
 
 ## Cloning Repositories
 
@@ -202,6 +202,18 @@ Note: `< >` should not be included in commit message. Example, `git fetch upstre
 
 `$ git remote add upstream <link of original repo>`
  - Note that "upstream" is the name I chose to give the repo, you can name it anything.
+
+ `$ git remote update`
+ - Update all remotes.
+ 
+ `$ git remote show`
+ - Show all the remotes associated with the current repository.
+ 
+ `$ git remote show <remote-name>`
+ - Show details about a specific remote.
+ 
+ `$ git remote remove <remote-name>`
+ - Remove a specific remote.
 
 `$ git fetch upstream <branch name>`
  - Fetch the latest changes. Alternatively, you can do `git pull upstream <branch name>` but it adds an extra merge commit.
