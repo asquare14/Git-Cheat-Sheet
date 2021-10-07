@@ -33,6 +33,14 @@ Tons of learning materials on the Web.
 - [Pluralsight Git Course](https://www.pluralsight.com/courses/code-school-git-real?gclid=EAIaIQobChMIlIu99OTn3QIVWgwrCh3SuAJKEAAYASAAEgI6JvD_BwE&aid=7010a000002BWq6AAG&promo=&oid=&utm_source=non_branded&utm_medium=digital_paid_search_google&utm_campaign=IN_Dynamic&utm_content=&s_kwcid=AL!5668!3!277681681323!b!!g!!&ef_id=WyW-tQAABZggfylD:20181002124627:s)
 - [ProGit Book](https://git-scm.com/book/en/v2)
 - [Visualizing Git](http://git-school.github.io/visualizing-git/)
+- [The Net Ninja - Git & GitHub Tutorial for Beginners](https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)
+- [freeCodeCamp - Git and GitHub for Beginners - Crash Course](https://www.youtube.com/watch?v=RGOj5yH7evk)
+- [freeCodeCamp - Git for Professionals Tutorial - Tools & Concepts for Mastering Version Control with Git  ](https://www.youtube.com/watch?v=Uszj_k0DGsg)
+- [Brad Traversy - Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
+- [Brad Traversy - Automatic Deployment With Github Actions](https://www.youtube.com/watch?v=X3F3El_yvFg)
+- [Programming with Mosh - Git Tutorial for Beginners: Learn Git in 1 Hour](https://www.youtube.com/watch?v=8JJ101D3knE)
+- [Edureka - Git & GitHub Full Course in 5 Hours](https://www.youtube.com/watch?v=KMOmw19ZCGs)
+- [Bogdan Stashchuk - Git and GitHub Tutorial for Beginners (11 Hours)](https://www.youtube.com/watch?v=3FKrszHcIsA)
 
 ## Workflow
 
